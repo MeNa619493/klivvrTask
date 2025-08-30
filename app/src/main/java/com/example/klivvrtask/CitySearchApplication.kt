@@ -1,0 +1,7 @@
+package com.example.klivvrtask
+
+import android.app.Application
+import dagger.hilt.android.HiltAndroidApp
+
+@HiltAndroidApp
+class CitySearchApplication : Application()
