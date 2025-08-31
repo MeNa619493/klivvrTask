@@ -18,7 +18,6 @@ class CitySearchViewModel @Inject constructor(
     private val loadCitiesUseCase: LoadCitiesUseCase,
     private val searchCitiesUseCase: SearchCitiesUseCase,
 ) : ViewModel() {
-    // Separate the search query from the UI state
     private val _state = MutableStateFlow(CitySearchState())
     val state: StateFlow<CitySearchState> = _state
 

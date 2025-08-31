@@ -9,7 +9,6 @@ import com.example.klivvrtask.domain.model.City
  */
 class CityTrie {
     private val root = TrieNode()
-    // Store all cities for getAllCities() method
     private val allCities = mutableListOf<City>()
 
     class TrieNode {
@@ -72,6 +71,6 @@ class CityTrie {
         }
 
         // Return all cities with this prefix, sorted alphabetically
-        return current.cities.sortedBy { it.displayName }
+        return current.cities.sortedBy { it.name }
     }
 }
