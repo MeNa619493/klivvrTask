@@ -115,13 +115,7 @@ class CitySearchViewModel @Inject constructor(
                         }
                     }
 
-                    is Resource.Loading -> {
-                        _state.update {
-                            it.copy(
-                                isLoading = true
-                            )
-                        }
-                    }
+                    is Resource.Loading -> {}
                 }
             }
         }
